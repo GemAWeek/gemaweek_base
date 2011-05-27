@@ -1,4 +1,5 @@
 GemaweekBase::Application.routes.draw do
+  root to: "Welcome#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
