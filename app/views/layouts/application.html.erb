@@ -8,6 +8,11 @@
   </head>
   <body>
     <div id='container'>
+      <% if notice %>
+        <p class='success'><%= notice %></p>
+      <% elsif alert %>
+        <p class='error'><%= alert %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
